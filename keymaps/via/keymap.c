@@ -152,29 +152,32 @@ void change_RGB(bool clockwise) {
     }
 }
 
-void encoder_update_user(uint8_t index, bool clockwise) {
-    switch (biton32(layer_state))
-    {
-        case _MEDIA:
-            clockwise ? tap_code(KC_VOLU) : tap_code(KC_VOLD);
-            break;
-        case _BROWSER:
-            register_code(KC_LCTRL);
-            clockwise ? tap_code(KC_PGUP) : tap_code(KC_PGDOWN);
-            unregister_code(KC_LCTRL);
-            break;
-        case _MACRO:
-            if (!clockwise) { register_code(KC_LSFT); }
-            register_code(KC_LCTRL);
-            register_code(KC_LALT);
-            tap_code(KC_TAB);
-            unregister_code(KC_LCTRL);
-            unregister_code(KC_LALT);
-            if(!clockwise) { unregister_code(KC_LSFT); }
-            break;
-        case _RGBLIGHTS:
-            //clockwise ? tap_code(RGB_SAI) : tap_code(RGB_SAD);
-            change_RGB(clockwise);
-            break;
+
+bool encoder_update_user(uint8_t index, bool clockwise) {
+    if (index == _MEDIA) {
+        if (clockwise) {
+            tap_code(KC_VOLU);
+        } else {
+            tap_code(KC_VOLD);
+        }
     }
-}
+    else if (index == _BROWSER) {
+        if (clockwise) {
+            tap_code(KC_PGDN);
+        } else {
+            tap_code(KC_PGUP);
+        }
+    }
+    // else if (index == _RIGHT) {
+        // if (clockwise) {
+            // tap_code(KC_PGDN);
+        // } else {
+            // tap_code(KC_PGUP);
+        // }
+		return true;
+    }
+    
+
+
+
+

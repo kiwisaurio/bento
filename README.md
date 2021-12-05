@@ -1,4 +1,4 @@
-# Bento Macropad kiwi's edition with VIA and backlight
+# Bento Macropad Milkshake Edition with VIA
 
 
 ![Bento](https://i.imgur.com/csn46mNl.jpg)
@@ -12,14 +12,13 @@ The Bento Macropad is a 5-key macropad with rotary encoder designed by Dwin17 (D
 - RGB Underglow
 - VIA support (added by c0qu1)
 - Pro Micro microcontroller was upgraded with qmk-dfu bootloader to avoid opening the Bento to press reset, just have to unplugged USB, hold the upper left key and plug it to PC. If your Pro-Micro has the default Caterina bootloader the change is very simple in the rules.mk file, you can also download a precompiled firmware for the Caterina bootloader.
-- Added a build guide to add backlight on the keys and a precompiled firmware. Also, fixed the keymap so you can compile it.
 ________________________________________________________________________________________________________________________________________________________________
 
 **FAQ**
 
 * Can you post a compiled firmware?
   - https://github.com/c0qu1/bento/releases
-* Is this project original from kiwisaurio?
+* Is this project original from c0qu1?
   - No. You can find the forked project here: https://github.com/Dwin17/bento
   - Also would like to credit @mttpsck on GitHub for the content of the 4 layers
 * Is the VIA support working perfectly?
