@@ -1,4 +1,4 @@
-# Bento Macropad Milkshake Edition with VIA
+# Bento Macropad kiwi's Edition with VIA and backlight
 
 
 ![Bento](https://i.imgur.com/csn46mNl.jpg)
@@ -12,14 +12,15 @@ The Bento Macropad is a 5-key macropad with rotary encoder designed by Dwin17 (D
 - RGB Underglow
 - VIA support (added by c0qu1)
 - Pro Micro microcontroller was upgraded with qmk-dfu bootloader to avoid opening the Bento to press reset, just have to unplugged USB, hold the upper left key and plug it to PC. If your Pro-Micro has the default Caterina bootloader the change is very simple in the rules.mk file, you can also download a precompiled firmware for the Caterina bootloader.
+- Added backlight on the firmware and fixed the current via keymap, so you can compile it as you want. 
 ________________________________________________________________________________________________________________________________________________________________
 
 **FAQ**
 
 * Can you post a compiled firmware?
-  - https://github.com/c0qu1/bento/releases
-* Is this project original from c0qu1?
-  - No. You can find the forked project here: https://github.com/Dwin17/bento
+  - https://github.com/kiwisaurio/bento/releases
+* Is this project original from kiwisaurio?
+  - No. You can find the forked project here: https://github.com/Dwin17/bento and the forked project with VIA addon on https://github.com/c0qu1/bento
   - Also would like to credit @mttpsck on GitHub for the content of the 4 layers
 * Is the VIA support working perfectly?
   - Almost, the rotary encoder is not supported by VIA. The firmware provides support for the rotary encoder that works while also supporting VIA on the 4 contiguous keys, and the rotary encoder built in button. The 5th key is used to cycle through all the layers and this is not supported by VIA since it is a custom function in QMK. The layer switching key was removed from the VIA layout to prevent an accidental modification of it.
