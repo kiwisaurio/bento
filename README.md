@@ -1,7 +1,7 @@
 # Bento Macropad kiwi's Edition with VIA and backlight
 
 
-![Bento](https://i.imgur.com/csn46mNl.jpg)
+![Bento](https://kiwisworkshop.com/wp-content/uploads/2021/12/IMG_9798-scaled.jpg)
 
 
 The Bento Macropad is a 5-key macropad with rotary encoder designed by Dwin17 (Discord: **Dwin#3766**, Reddit: **nguyedt**) with PCB designed by coarse (keyboard.coarse.tech). 
